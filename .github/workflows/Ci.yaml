@@ -70,7 +70,7 @@ jobs:
         push: true
         tags: ${{ secrets.DOCKERHUB_USERNAME }}/go-web-app:${{github.run_id}}
 
-update-newtag-in-helm-chart:
+  update-newtag-in-helm-chart:
     runs-on: ubuntu-latest
 
     # This job runs after the push job ie the push job has to be completed before this job can run
